@@ -90,7 +90,7 @@ class CGNet(nn.Layer):
             mode='bilinear',
             align_corners=False
         )  # Upsample score map, factor=8
-        return out
+        return [out]
 
 
 class ConvBNPReLU(nn.Layer):
